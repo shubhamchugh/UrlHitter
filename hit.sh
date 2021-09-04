@@ -1,15 +1,16 @@
 #!/bin/sh
 
 SITEMAP=$1
+LIMIT=$2
 
 if [ "$SITEMAP" = "" ]; then
-    echo "Usage: $0 http://domain.com/sitemap.xml"
+    echo "Usage: $0 http://domain.com/scrapeUrl"
         exit 1
 fi
 
 a=0
 
-while [ $a -lt  10 ]
+while [ $a -lt  $LIMIT ]
 do
 
 XML=`curl --location --request GET $SITEMAP` 
