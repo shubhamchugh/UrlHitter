@@ -16,7 +16,7 @@ cd /home/UrlHitter
 After that you can start hit
 
 ```sh
-sh hit.sh http//example.com 5
+sh hit.sh http//example.com 5 &
 ```
 Here
 
